@@ -1,10 +1,10 @@
 <?php
-// db.php - handles database connection
+
 
 $host = 'localhost';
-$db   = 'carpooling'; // make sure this matches your database name
-$user = 'root'; 
-$pass = 'password123'; 
+$db   = 'carpooling'; 
+$user = ''; 
+$pass = ''; 
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -20,3 +20,4 @@ try {
 } catch (\PDOException $e) {
     exit('Database connection failed: ' . $e->getMessage());
 }
+
