@@ -1,6 +1,6 @@
 # Carpooling Application
 
-A simple ride-sharing web application built with **PHP**, **MySQL**, **HTML**, and ** Tailwind CSS**.  
+A simple ride-sharing web application built with **PHP**, **MySQL**, **HTML**, and **Tailwind CSS**.  
 This project was created as part of a DBMS project to demonstrate database design, user interaction, and trip management.
 
 ---
