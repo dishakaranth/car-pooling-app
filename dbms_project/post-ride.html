@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Post a Ride - Car Pooling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white flex items-center justify-center min-h-screen p-6">
+    <div class="w-full max-w-md p-6 bg-gray-50 rounded shadow">
+      <h2 class="text-2xl font-semibold mb-6 text-center text-green-700">Post a Ride</h2>
+      <form action="post-ride.php" method="POST" class="space-y-4">
+        <input
+          type="text"
+          name="departure"
+          placeholder="Departure Location"
+          required
+          class="w-full p-2 border rounded"
+        />
+        <input
+          type="text"
+          name="destination"
+          placeholder="Destination"
+          required
+          class="w-full p-2 border rounded"
+        />
+        <label class="block text-sm font-medium text-gray-700">Departure Time</label>
+        <input
+          type="datetime-local"
+          name="departure_time"
+          required
+          class="w-full p-2 border rounded"
+        />
+        <input
+          type="number"
+          name="available_seats"
+          placeholder="Available Seats"
+          min="1"
+          required
+          class="w-full p-2 border rounded"
+        />
+        <input
+          type="number"
+          name="price"
+          placeholder="Price (e.g., 12.50)"
+          min="0"
+          step="0.01"
+          required
+          class="w-full p-2 border rounded"
+        />
+        <button
+          type="submit"
+          class="w-full py-3 bg-green-500 text-white rounded hover:bg-green-600 transition"
+        >
+          Post Ride
+        </button>
+      </form>
+      <a
+        href="dashboard.php"
+        class="block mt-6 text-center text-sm text-gray-500 hover:underline"
+      >
+        ← Back to Dashboard
+      </a>
+    </div>
+  </body>
+</html>

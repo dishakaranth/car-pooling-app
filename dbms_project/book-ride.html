@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Ride - BlaBlaCar Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-white flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md p-6 bg-gray-50 rounded shadow">
+      <h2 class="text-xl font-semibold mb-4 text-center text-blue-600">Book a Ride</h2>
+
+      <form action="available-rides.php" method="GET">
+        <input
+          type="text"
+          name="from"
+          placeholder="From"
+          class="w-full mb-3 p-2 border rounded"
+          required
+        />
+
+        <input
+          type="text"
+          name="to"
+          placeholder="To"
+          class="w-full mb-3 p-2 border rounded"
+          required
+        />
+
+        <input
+          type="date"
+          name="date"
+          class="w-full mb-3 p-2 border rounded"
+          required
+        />
+
+        <input
+          type="number"
+          name="seats"
+          placeholder="Number of Seats"
+          class="w-full mb-4 p-2 border rounded"
+          min="1"
+          required
+        />
+
+        <button
+          type="submit"
+          class="bg-blue-500 text-white w-full py-2 rounded hover:bg-blue-600 transition"
+        >
+          Search Rides
+        </button>
+      </form>
+
+      <a href="dashboard.php" class="block mt-4 text-sm text-gray-500 hover:underline text-center">
+        ← Back to Dashboard
+      </a>
+    </div>
+  </body>
+</html>
